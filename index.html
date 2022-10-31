@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DreamHome</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="src/input.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body>
+    <!---------------------- Before Nav Information Section Starts Here ---------------------------->
+    <section>
+        <div class="hidden md:flex bg-blue-500 h-12 lg:px-72 md:px-20 ">
+            <span class="flex pt-3">
+                <i class="fa fa-paper-plane pt-1" style="color: white"></i>
+                <h6 class="text-white px-2 text-[16px]">mail.uremail.com</h6>
+            </span>
+            <span class="flex pt-3 px-10">
+                <i class="fa fa-phone pt-1" style="color: white; font-size: 20px;"></i>
+                <h6 class="text-white px-2 text-[16px]">mail.uremail.com</h6> 
+            </span>
+            <span class="flex pt-3 lg:px-96 md:px-32">
+                <i class="fa fa-user" style="font-size:20px; color: white"></i>
+                <a href="#" class="text-white px-2 text-[16px] cursor-pointer">Login/Signup</a>
+            </span>
+        </div>
+    </section>
+    <!---------------------- Before Nav Information Section Ends Here ------------------------------>
+
+    <!---------------------- Nav Section Starts Here ----------------------------------------------->
+    <section>
+    <nav class="p-5 bg-white shadow md:flex md:items-center md:justify-between">
+        <div class="flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-[Popp] cursor-pointer">
+                <img src="img/logo.png" class="h-10 inline" alt="">DreamHome
+            </a>
+            <span class="text-3xl cursor-pointer md:hidden mx-2 block">
+                <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+            </span>
+        </div>
+        <ul class="md:flex md:items-center z-[-1] md:z-auto md:static absolute bg-white w-full left-0 md:w-auto md:py-0 py-0 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500">
+            <li class="mx-4 my-6 md:my-0">
+                <a href="#" class="text-[18px] text-blue-500">Home</a>
+            </li>
+            <li class="mx-4 my-6 md:my-0">
+                <a href="#" class="text-[18px]">Property</a>
+            </li>
+            <li class="mx-4 my-6 md:my-0">
+                <a href="#" class="text-[18px]">Blogs</a>
+            </li>
+            <li class="mx-4 my-6 md:my-0">
+                <a href="#" class="text-[18px]">Agents</a>
+            </li>
+            <li class="mx-4 my-6 md:my-0">
+                <a href="#" class="text-[18px]">FAQs</a>
+            </li>
+            <li class="mx-4 my-6 md:my-0">
+            <a href="#" class="text-[18px]">Contact</a>
+            </li>
+        </ul>
+    </nav>
+    </section>
+    <!---------------------- Nav Section Starts Here ----------------------------------------------->
+
+    <!---------------------- Banner1 Section Starts Here ------------------------------------------->
+    <section>
+    <div class=" w-screen h-[400px] md:w-full md:h-[900px] lg:w-screen lg:h-screen bg-no-repeat bg-cover object-fill "
+    style="background-image: url('img/bg1.jpg')">
+    <h1 class="text-[20px] md:text-[30px] lg:text-[40px] text-white font-extrabold font-sans text-center pt-32 md:pt-80 lg:pt-72">Find your Dream Properties</h1>
+    <div class="w-[300px] h-[180px] md:w-[500px] md:h-[230px] lg:w-[900px] lg:h-[180px]
+     bg-white items-center mt-3 pt-2 mx-auto md:mt-10 lg:mt-10 md:pt-5 lg:pt-5">
+        <span class="font-semibold px-3 md:px-5 lg:px-5 text-[12px] md:text-[18px] lg:text-[18px] ">Search your properties</span>
+        <div class="grid lg:grid-cols-4 grid-cols-2 md:justify-between lg:justify-between mt-2 md:mt-5 lg:mt-5">
+            <span class="px-3 md:px-5 lg:px-5">
+            <label for="countries" class="block mb-2 text-[12px] md:text-sm lg:text-sm font-medium text-gray-500">Property Type</label>
+            <select class="border-2 w-28 h-8 md:w-44 lg:w-44 md:h-10 lg:h-10">
+                <option selected class="font-light">Select</option>
+                <option value="1">Value1</option>
+                <option value="2">Value2</option>
+                <option value="3">Value3</option>
+                <option value="4">Value4</option>
+            </select>
+            </span>
+            <span class="px-3 md:px-5 lg:px-5">
+                <label for="countries" class="block mb-2 text-[12px] md:text-sm lg:text-sm font-medium text-gray-500">Property Size</label>
+                <select class="border-2 w-28 h-8 md:w-44 lg:w-44 md:h-10 lg:h-10">
+                    <option selected class="font-light px-5">Select</option>
+                    <option value="1">Value1</option>
+                    <option value="2">Value2</option>
+                    <option value="3">Value3</option>
+                    <option value="4">Value4</option>
+                </select>
+                </span>
+            <span class="px-3 md:px-5 lg:px-5 pt-2 md:pt-0 lg:pt-0">
+                    <label for="countries" class="block mb-2 text-[12px] md:text-sm lg:text-sm font-medium text-gray-500">Location</label>
+                    <select class="border-2 w-28 h-8 md:w-44 lg:w-44 md:h-10 lg:h-10">
+                        <option selected class="font-light px-5">Select</option>
+                        <option value="1">Value1</option>
+                        <option value="2">Value2</option>
+                        <option value="3">Value3</option>
+                        <option value="4">Value4</option>
+                    </select>
+            </span>
+            <span class="px-3 md:px-5 lg:px-5 pt-2 md:pt-0 lg:pt-0">
+                    <label for="countries" class="block mb-2 text-sm invisible font-medium text-gray-500">Location</label>
+                    <button type="button" class="text-white bg-blue-600 w-20 h-8 md:w-44 lg:w-44 md:h-10 lg:h-10">Search</button>
+            </span>
+        </div>
+    </div>
+    </div>
+    </section>
+    <!---------------------- Banner1 Section Ends Here --------------------------------------------->
+
+    <!---------------------- Banner2 Section Starts Here ------------------------------------------->
+    <section>
+        <div class="grid lg:grid-cols-2 grid-cols-1 lg:gap-5">
+            <div class="bg-no-repeat mx-16 md:mx-60 lg:mx-36 mt-20 md:mt-28 lg:mt-28 flex 
+            h-[300px] w-[280px] md:h-[460px] md:w-[435px] lg:h-[460px] lg:w-[435px]">
+                <img src="img/family1.jpg" alt="">
+            </div>
+            <div class="pt-20 md:pt-28 lg:pt-28 px-0 mx-16 md:mx-60 lg:mx-0">
+                <!-- <h1 class="md:hidden lg:hidden text-[22px] md:text-[30px] lg:text-[30px] font-semibold">Are You Looking Best Property Near You ? Contact Us</h1> -->
+                <h1 class="text-[22px] md:text-[30px] lg:text-[30px] font-semibold">Are You Looking Best Property <br> Near You ? Contact Us</h1>
+                <h3 class="text-blue-500 text-[12px] md:text-[16px] lg:text-[16px] pt-5">Who Are We ? </h3>
+                <p class="text-[15px] md:text-[18px] lg:text-[18px] pt-5">It is a long established fact that a reader will be distracted by the <br>
+                     readable content of a page when looking at its layout. The point of <br>
+                      using Lorem Ipsum is that it has normal distribution.</p>
+                <p class="text-[15px] md:text-[18px] lg:text-[18px] pt-5">It is a long established fact that a reader will be distracted by the <br>
+                     readable content of a page when looking at its layout.</p>
+                <div class="grid lg:grid-cols-2 grid-cols-1">
+                    <div class="flex pt-10">
+                        <img src="img/vector1.png" alt="" class="w-[55px] h-[55px] md:w-[70px] md:h-[70px] lg:w-[70px] lg:h-[70px]">
+                        <div>
+                            <h1 class="text-[18px] md:text-[24px] lg:text-[24px] px-5 font-normal">332+</h1>
+                            <p class="text-[18px] md:text-[24px] lg:text-[24px] px-5 font-normal">Properties Listed</p>
+                        </div>
+                    </div>
+                    <div class="flex pt-10">
+                        <img src="img/vector1.png" alt="" class="w-[55px] h-[55px] md:w-[70px] md:h-[70px] lg:w-[70px] lg:h-[70px]">
+                        <div>
+                            <h1 class="text-[18px] md:text-[24px] lg:text-[24px] px-5 font-normal">158+</h1>
+                            <p class="text-[18px] md:text-[24px] lg:text-[24px] px-5 font-normal">Properties Sold</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!---------------------- Banner2 Section Ends Here --------------------------------------------->
+   
+    <!---------------------- Buy and Sell Section Starts Here -------------------------------------->
+    <section>
+    <div class="hidden mx-60 mt-28 lg:grid lg:grid-cols-3 lg:gap-5">
+        <div> 
+            <div class="flex">
+            <img src="img/vector1.png" alt="" class="h-[50px] w-[50px]">
+            <h3 class="text-[24px] px-3 font-semibold">Buy and Sell Property</h3>
+            </div>
+            <p class="text-[18px] pt-8 font-normal">There are many variations of  passages of Lorem Ipsum available but the majority suffered.</p>
+        </div>
+        <div> 
+            <span class="flex">
+            <img src="img/vector1.png" alt="" class="h-[50px] w-[50px]">
+            <h3 class="text-[24px] px-3 font-semibold">Buy and Sell Property</h3>
+            </span>
+            <p class="text-[18px] pt-8 font-normal">There are many variations of  passages of Lorem Ipsum available but the majority suffered.</p>
+        </div>
+        <div> 
+            <span class="flex">
+            <img src="img/vector1.png" alt="" class="h-12 w-12">
+            <h3 class="text-[24px] px-3 font-semibold">Buy and Sell Property</h3>
+            </span>
+            <p class="text-[18px] pt-8 font-normal">There are many variations of  passages of Lorem Ipsum available but the majority suffered.</p>
+        </div>
+    </div>
+    </section>
+    <!---------------------- Buy and Sell Section Starts Here -------------------------------------->
+
+    <!---------------------- Featured Properties Section Starts Here ------------------------------->
+    <section>
+    <div>
+            <h1 class="text-center pt-[120px] text-[28px] md:text-[38px] lg:text-[38px] font-semibold">Our Feature Property</h1>
+            <p class="text-center text-[15px] md:text-[18px] lg:text-[18px]  pt-[16px]">There are many variations of passages of Lorem Ipsum available but the this in <br> majority have suffered alteration in some</p>
+    </div>
+    
+    <div class="grid grid-cols-1 lg:grid-cols-2 lg:gap-5 
+    lg:mt-20 lg:mx-36 md:mt-10 md:mx-24 mx-12  mt-10">
+        <div class="w-[300px] h-[400px] md:w-[540px] md:h-[470px] lg:w-[540px] lg:h-[470px] shadow mx-auto mt-20 relative">
+            <img src="img/house1.png" alt="">
+            <div>
+                <p class="text-[18px] md:text-[24px] lg:text-[24px] font-semibold px-4 pt-5">Bravo Apollo Appartments</p>
+                <p class="text-[15px] md:text-[16px] lg:text-[16px] px-5 pt-3">There are many variations of passages of lorem Ipsum available, but the majority have suffered alteration in some form injected.</p>
+                <p class="flex px-4 pt-6"><img src="img/location.png" alt="" class="w-[20px] h-[20px]">779 6th Ave New York,NY 120400</p>
+                <div class="grid grid-cols-2 md:flex lg:flex px-4 pt-6">
+                    <h3 class="flex "><img src="img/bed.png" alt="" class="w-[20px] h-[20px]">4 Bed</h3>
+                    <h3 class="flex md:px-4 lg:px-4"><img src="img/shower.png" alt="" class="w-[20px] h-[20px]">3 Bath</h3>
+                    <h3 class="flex md:px-4 lg:px-4"><img src="img/rooms.png" alt="" class="w-[20px] h-[20px]">8 Rooms</h3>
+                    <h3 class="flex md:px-4 lg:px-4"><img src="img/sqft.png" alt="" class="w-[20px] h-[20px]">1574 sq</h3>
+                </div>
+            </div> 
+            <div class="bg-blue-500 text-white font-semibold absolute top-3 left-3 h-10 w-20 text-center pt-2">
+                <span>$32000</span>
+            </div>
+        </div>
+        <div class="w-[300px] h-[400px] md:w-[540px] md:h-[470px] lg:w-[540px] lg:h-[470px] shadow mx-auto mt-20 relative">
+            <img src="img/house2.png" alt="">
+            <div>
+                <p class="text-[18px] md:text-[24px] lg:text-[24px] font-semibold px-4 pt-5">Bravo Apollo Appartments</p>
+                <p class="text-[15px] md:text-[16px] lg:text-[16px] px-5 pt-3">There are many variations of passages of lorem Ipsum available, but the majority have suffered alteration in some form injected.</p>
+                <p class="flex px-4 pt-6"><img src="img/location.png" alt="" class="w-[20px] h-[20px]">779 6th Ave New York,NY 120400</p>
+                <div class="grid grid-cols-2 md:flex lg:flex px-4 pt-6">
+                    <h3 class="flex "><img src="img/bed.png" alt="" class="w-[20px] h-[20px]">4 Bed</h3>
+                    <h3 class="flex md:px-4 lg:px-4"><img src="img/shower.png" alt="" class="w-[20px] h-[20px]">3 Bath</h3>
+                    <h3 class="flex md:px-4 lg:px-4"><img src="img/rooms.png" alt="" class="w-[20px] h-[20px]">8 Rooms</h3>
+                    <h3 class="flex md:px-4 lg:px-4"><img src="img/sqft.png" alt="" class="w-[20px] h-[20px]">1574 sq</h3>
+                </div>
+            </div> 
+            <div class="bg-blue-500 text-white font-semibold absolute top-3 left-3 h-10 w-20 text-center pt-2">
+                <span>$32000</span>
+            </div>
+        </div>
+        <div class="w-[300px] h-[400px] md:w-[540px] md:h-[470px] lg:w-[540px] lg:h-[470px] shadow mx-auto mt-20 relative">
+            <img src="img/house3.png" alt="">
+            <div>
+                <p class="text-[18px] md:text-[24px] lg:text-[24px] font-semibold px-4 pt-5">Bravo Apollo Appartments</p>
+                <p class="text-[15px] md:text-[16px] lg:text-[16px] px-5 pt-3">There are many variations of passages of lorem Ipsum available, but the majority have suffered alteration in some form injected.</p>
+                <p class="flex px-4 pt-6"><img src="img/location.png" alt="" class="w-[20px] h-[20px]">779 6th Ave New York,NY 120400</p>
+                <div class="grid grid-cols-2 md:flex lg:flex px-4 pt-6">
+                    <h3 class="flex "><img src="img/bed.png" alt="" class="w-[20px] h-[20px]">4 Bed</h3>
+                    <h3 class="flex md:px-4 lg:px-4"><img src="img/shower.png" alt="" class="w-[20px] h-[20px]">3 Bath</h3>
+                    <h3 class="flex md:px-4 lg:px-4"><img src="img/rooms.png" alt="" class="w-[20px] h-[20px]">8 Rooms</h3>
+                    <h3 class="flex md:px-4 lg:px-4"><img src="img/sqft.png" alt="" class="w-[20px] h-[20px]">1574 sq</h3>
+                </div>
+            </div> 
+            <div class="bg-blue-500 text-white font-semibold absolute top-3 left-3 h-10 w-20 text-center pt-2">
+                <span>$32000</span>
+            </div>
+        </div>
+        <div class="w-[300px] h-[400px] md:w-[540px] md:h-[470px] lg:w-[540px] lg:h-[470px] shadow mx-auto mt-20 relative">
+            <img src="img/house4.png" alt="">
+            <div>
+                <p class="text-[18px] md:text-[24px] lg:text-[24px] font-semibold px-4 pt-5">Bravo Apollo Appartments</p>
+                <p class="text-[15px] md:text-[16px] lg:text-[16px] px-5 pt-3">There are many variations of passages of lorem Ipsum available, but the majority have suffered alteration in some form injected.</p>
+                <p class="flex px-4 pt-6"><img src="img/location.png" alt="" class="w-[20px] h-[20px]">779 6th Ave New York,NY 120400</p>
+                <div class="grid grid-cols-2 md:flex lg:flex px-4 pt-6">
+                    <h3 class="flex "><img src="img/bed.png" alt="" class="w-[20px] h-[20px]">4 Bed</h3>
+                    <h3 class="flex md:px-4 lg:px-4"><img src="img/shower.png" alt="" class="w-[20px] h-[20px]">3 Bath</h3>
+                    <h3 class="flex md:px-4 lg:px-4"><img src="img/rooms.png" alt="" class="w-[20px] h-[20px]">8 Rooms</h3>
+                    <h3 class="flex md:px-4 lg:px-4"><img src="img/sqft.png" alt="" class="w-[20px] h-[20px]">1574 sq</h3>
+                </div>
+            </div> 
+            <div class="bg-blue-500 text-white font-semibold absolute top-3 left-3 h-10 w-20 text-center pt-2">
+                <span>$32000</span>
+            </div>
+        </div>
+    </div>
+    <div class="flex flex-col justify-center items-center pt-16">
+        <button class="text-white bg-blue-500 w-40 h-14 font-bold mb-28">See More </button>
+    </div>
+    </section>
+    <!---------------------- Featured Properties Section Starts Here ------------------------------->
+
+    <!---------------------- NewsLetter Section Starts Here ---------------------------------------->
+    <section>
+    <div class="h-72 bg-no-repeat lg:flex hidden lg:visible"
+    style="background-image: url(img/newsletter.png);">
+        <h1 class="font-bold text-white text-[30px] pt-24 px-24">Subscribe Our Email Addres<br>For Future Updates and News</h1>
+        <span class="pt-28"><input class="w-96 h-16 px-5" type="email" placeholder="Type Your Email Address">
+        <button class="text-white bg-blue-600 w-36 h-16 mx-5 font-semibold text-[16px]">Submit</button></span>
+    </div>
+    </section>
+    <!---------------------- NewsLetter Section Ends Here ------------------------------------------->
+
+    <!---------------------- Recommended Section Starts Here ---------------------------------------->
+    <section>
+    <div class="lg:flex text-center">
+        <span>
+        <h1 class="text-center mt-8 md:pt-20 lg:pt-20 text-[28px] md:text-[38px] lg:text-[38px] font-semibold">Recommended for you</h1>
+            <p class="text-[15px] md:text-[18px] lg:text-[18px] px-24 pt-5">There are many variations of passages of lorem Ipsum available, but the <br> majority have suffered alteration in some form injected.</p>
+        </span>
+        <span class="lg:pt-32 mx-auto">
+            <button class="mt-10 lg:mt-0 text-white bg-blue-500 w-52 h-14 font-bold">See More Properties</button>
+        </span>
+    </div>
+
+    <div class="lg:flex md:px-48 lg:px-0 px-12">
+    <span class="lg:pt-28 lg:px-24 px-32">
+        <h1 class="text-[20px] md:text-[30px] ld:text-[30px] font-semibold text-gray-600 pt-10">Bravo Apollo Appartments</h1>
+        <h2 class="text-[30px] font-semibold text-gray-600 pt-5">$32000</h2>
+        <p class="text-[18px] pt-5 leading-[30px]">There are many variations of passages of lorem Ipsum <br>available, but the majority have suffered alteration in <br> some form injected.</p>
+        <span class="flex pt-6 text-[18px] text-gray-500"><img src="img/location.png" alt="" class="w-[20px] h-[20px]">&nbsp;&nbsp;779 6th Ave New York,NY 120400</span>
+        <div class="grid grid-cols-2 md:flex lg:flex pt-6 text-gray-500">
+            <span class="flex "><img src="img/bed.png" alt="" class="w-[20px] h-[20px]">4 Bed</span>
+            <span class="flex md:px-4 lg:px-4"><img src="img/shower.png" alt="" class="w-[20px] h-[20px]">3 Bath</span>
+            <span class="flex md:px-4 lg:px-4"><img src="img/rooms.png" alt="" class="w-[20px] h-[20px]">8 Rooms</span>
+            <span class="flex md:px-4 lg:px-4"><img src="img/sqft.png" alt="" class="w-[20px] h-[20px]">1574 sq</span>
+        </div>
+    </span>
+    <div class="pt-12 px-8 md:pt-28 md:px-36 lg:pt-28 lg:px-36">
+        <img src="img/living room.png" alt="">
+    </div>
+    </div>
+    </section>
+    <!----------------------Recommended Section Ends Here ------------------------------------------->
+
+    <!----------------------Cities Section Starts Here ---------------------------------------------->
+    <section>
+    <div>
+        <h1 class="text-center pt-[120px] text-[24px] md:text-[38px] lg:text-[38px] font-semibold">Find Properties in These Cities</h1>
+        <p class="text-center text-[15px] md:text-[18px] lg:text-[18px] pt-[16px]">There are many variations of passages of Lorem Ipsum available but the this in <br> majority have suffered alteration in some</p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-5 lg:gap-8 
+    lg:mt-20 lg:mx-36 md:mt-10 md:mx-24 mx-12 mt-10">
+    <div class="relative">
+        <img src="img/losAngeles.png" alt="">
+        <div class="text-white font-bold flex absolute bottom-5 left-3"> 
+            <img src="img/locationVectorWhite.png" alt="">
+            <p class="px-2">Los Angeles</p>
+        </div>
+    </div>
+    <div class="relative">
+        <img src="img/newYork.png" alt="">
+        <div class="text-white font-bold flex absolute bottom-5 left-3"> 
+            <img src="img/locationVectorWhite.png" alt="">
+            <p class="px-2">New York</p>
+        </div>
+    </div>
+    <div class="relative">
+        <img src="img/sanAntonio.png" alt="">
+        <div class="text-white font-bold flex absolute bottom-5 left-3"> 
+            <img src="img/locationVectorWhite.png" alt="">
+            <p class="px-2">San Antonio</p>
+        </div>
+    </div>
+    <div class="relative">
+        <img src="img/lasVegas.png" alt="">
+        <div class="text-white font-bold flex absolute bottom-5 left-3"> 
+            <img src="img/locationVectorWhite.png" alt="">
+            <p class="px-2">San Francisco</p>
+        </div>
+    </div>
+    <div class="relative">
+        <img src="img/lasVegas.png" alt="">
+        <div class="text-white font-bold flex absolute bottom-5 left-3"> 
+            <img src="img/locationVectorWhite.png" alt="">
+            <p class="px-2">Las Vegas</p>
+        </div>
+    </div>
+    <div class="relative">
+        <img src="img/sabBernardino.png" alt="">
+        <div class="text-white font-bold flex absolute bottom-5 left-3"> 
+            <img src="img/locationVectorWhite.png" alt="">
+            <p class="px-2">San Bernardino</p>
+        </div>
+    </div>
+    </div>
+
+    <div class="flex flex-col justify-center items-center pt-16">
+        <button class="text-white bg-blue-500 w-40 h-14 font-bold">See All Cities</button>
+    </div>
+    </section>
+    <!----------------------Cities Section Ends Here ------------------------------------------------>
+
+    <!----------------------Agents Section Starts Here ---------------------------------------------->
+    <section>
+    <div class="pt-10">
+        <h1 class="text-center pt-[120px] text-[24px] md:text-[38px] lg:text-[38px] font-semibold">Meet Our Popular Agents</h1>
+        <p class="text-center text-[15px] md:text-[18px] lg:text-[18px] pt-[16px]">There are many variations of passages of Lorem Ipsum available but the this in <br> majority have suffered alteration in some</p>
+    </div>
+
+    <div class="grid lg:grid-cols-3 md:grid-cols-1 lg:mx-36 lg:mt-10 lg:gap-3 md:mx-64 mx-8 mt-10">
+        <div class="w-[350px] h-[332px] shadow mt-8 lg:mt-0">
+            <div class="px-28 pt-10">
+                <img src="img/agent1.png" alt="" class="rounded-full">
+            </div>
+            <h1 class="text-[24px] font-semibold text-center pt-10">Grant Marshal</h1>
+            <p class="text-[18px] text-gray-500 text-center pt-3">Agents</p>
+            <span class="flex px-28 pt-5 justify-between">
+                <a href="#"><img src="img/instagram.png" alt=""></a>
+                <a href="#"><img src="img/linkedin.png" alt=""></a>
+                <a href="#"><img src="img/pintrest.png" alt=""></a>
+            </span>
+        </div>
+        <div class="w-[350px] h-[332px] shadow mt-8 lg:mt-0">
+            <div class="px-28 pt-10">
+                <img src="img/agent2.png" alt="" class="rounded-full">
+            </div>
+            <h1 class="text-[24px] font-semibold text-center pt-10">Grant Marshal</h1>
+            <p class="text-[18px] text-gray-500 text-center pt-3">Agents</p>
+            <span class="flex px-28 pt-5 justify-between">
+                <a href="#"><img src="img/instagram.png" alt=""></a>
+                <a href="#"><img src="img/linkedin.png" alt=""></a>
+                <a href="#"><img src="img/pintrest.png" alt=""></a>
+            </span>
+        </div>
+        <div class="w-[350px] h-[332px] shadow mt-8 lg:mt-0">
+            <div class="px-28 pt-10">
+                <img src="img/agent3.png" alt="" class="rounded-full">
+            </div>
+            <h1 class="text-[24px] font-semibold text-center pt-10">Grant Marshal</h1>
+            <p class="text-[18px] text-gray-500 text-center pt-3">Agents</p>
+            <span class="flex px-28 pt-5 justify-between">
+                <a href="#"><img src="img/instagram.png" alt=""></a>
+                <a href="#"><img src="img/linkedin.png" alt=""></a>
+                <a href="#"><img src="img/pintrest.png" alt=""></a>
+            </span>
+        </div>
+    </div> 
+    <div class="flex flex-col justify-center items-center pt-16">
+        <button class="text-white bg-blue-500 w-40 h-14 font-bold">See All Agents</button>
+    </div>
+    </section>
+    <!----------------------Agents Section Ends Here ------------------------------------------------>
+
+    <!----------------------Blog Section Starts Here ------------------------------------------------>
+    <section>
+    <div class="pt-5">
+        <h1 class="text-center pt-[120px] text-[24px] md:text-[38px] lg:text-[38px] font-semibold">Our Latest Property News</h1>
+        <p class="text-center text-[15px] md:text-[18px] lg:text-[18px] pt-[16px]">There are many variations of passages of Lorem Ipsum available but the this in <br> majority have suffered alteration in some</p>
+    </div>
+    <div class="grid lg:grid-cols-3 grid-cols-1 lg:gap-5 lg:mt-20 lg:mx-36 md:mx-40 md:mt-10 px-8">
+        <div class=" mt-8 lg:mt-0" >
+            <div class="px-8 pt-8">
+                <div><img src="img/bed1.png" alt=""></div>
+            </div>
+            <div>
+                <p class="text-blue-500 text-[12px] pt-7 px-8">Appartment</p>
+                <h1 class="text-[20px] md:text-[22px] lg:text-[22px] font-semibold pt-3 px-8">Top Title Insurer Exposed</h1>
+                <p class="text-[16px] pt-3 pb-5 px-8">It is a long established fact that a reader is <br> will be distracted by the readable....</p>
+            </div>
+        </div>
+        <div class="shadow mt-8 lg:mt-0" >
+            <div class="px-8 pt-8">
+                <div><img src="img/bed2.png" alt=""></div>
+            </div>
+            <div class="shadow">
+                <p class="text-blue-500 text-[12px] pt-7 px-8">Appartment</p>
+                <h1 class="text-[20px] md:text-[22px] lg:text-[22px] font-semibold pt-3 px-8">Top Title Insurer Exposed</h1>
+                <p class="text-[16px] pt-3 pb-5 px-8">It is a long established fact that a reader is <br> will be distracted by the readable....</p>
+            </div>
+        </div>
+        <div class="shadow  mt-8 lg:mt-0" >
+            <div class="px-8 pt-8">
+                <div><img src="img/bed3.png" alt=""></div>
+            </div>
+            <div class="shadow">
+                <p class="text-blue-500 text-[12px] pt-7 px-8">Appartment</p>
+                <h1 class="text-[20px] md:text-[22px] lg:text-[22px] font-semibold pt-3 px-8">Top Title Insurer Exposed</h1>
+                <p class="text-[16px] pt-3 pb-5 px-8">It is a long established fact that a reader is <br> will be distracted by the readable....</p>
+            </div>
+        </div>
+    </div>
+    <div class="flex flex-col justify-center items-center pt-24">
+        <button class="text-white bg-blue-500 w-40 h-14 font-bold">Read More Blogs</button>
+    </div>
+    </section>
+    <!----------------------Blog Section Ends Here -------------------------------------------------->
+
+    <!----------------------Footer Section Starts Here ---------------------------------------------->
+    <footer>
+    <div class="px-12 pt-24 md:px-36 md:pt-12 lg:px-36 lg:pt-12">
+        <a href="index.html" class="flex text-2xl font-[Popp] cursor-pointer">
+            <img src="img/logo.png" class="h-16 inline " alt="">
+            <h1 class="text-[40px] pt-5 font-normal">DreamHome</h1>
+        </a>
+        <p class="text-[16px] md:text-[20px] lg:text-[20px] pt-[16px]">There are many variations of passages of Lorem Ipsum available but the this in <br> majority have suffered alteration in some by injected humor of random</p>
+    </div>
+
+    <div class="block lg:flex">
+        <div class="w-[445px] h-[435px] shadow bg-white md:mx-36 md:mt-20 lg:mx-36 lg:mt-20 mt-10 ">
+            <div class="flex pt-10 px-10" >
+                <div class="w-[60px] h-[60px] flex bg-blue-500 rounded-full items-center">
+                    <img src="img/call.png" alt="" class="h-[24px] w-[24px] mx-auto">
+                </div>
+                <div>
+                    <p class="text-[15px] text-gray-500 px-5">Call Now</p>
+                    <h3 class="text-[20px] px-5 font-medium">+123 456 789 000</h3>
+                </div>
+            </div>
+            <div class="flex pt-12 px-10">
+                <div class="w-[60px] h-[60px] flex bg-blue-500 rounded-full items-center">
+                    <img src="img/message.png" alt="" class="h-[24px] w-[24px] mx-auto">
+                </div>
+                <div>
+                    <p class="text-[15px] text-gray-500 px-5">Email Us</p>
+                    <h3 class="text-[20px] px-5 font-medium">Mail.urmail.com</h3>
+                </div>
+            </div>
+            <div class="flex pt-12 px-10">
+                <div class="w-[60px] h-[60px] flex bg-blue-500 rounded-full items-center">
+                    <img src="img/location.png" alt="" class="h-[24px] w-[24px] mx-auto">
+                </div>
+                <div>
+                    <p class="text-[15px] text-gray-500 px-5">Our Office</p>
+                    <h3 class="text-[20px] px-5 font-medium">2972 Westheimer, Illinois 85486 </h3>
+                </div>
+            </div>
+        </div>
+        <div class="mt-20 lg:block md:px-36 lg:px-0 px-12">
+                <h1 class="text-[30px] font-semibold ">About Us</h1>
+                <div class="block md:flex lg:block">
+                    <a href="#"><p class="text-[18px] pt-5">How It Works</p></a>
+                    <a href="#"><p class="text-[18px] pt-5 md:px-5 lg:px-0">Meet Our Team</p></a>
+                    <a href="#"><p class="text-[18px] pt-5 md:px-5 lg:px-0">Help Desk</p></a>
+                    <a href="#"><p class="text-[18px] pt-5 md:px-5 lg:px-0">Prices & Plannning</p></a>
+                </div>
+        </div>
+            <div class="mt-20 lg:block px-12 md:px-36 lg:px-0 mx-auto" >
+                <h1 class="text-[30px] font-semibold">Quick Links</h1>
+                <div class="block md:flex lg:block">
+                    <a href="#"><p class="text-[18px] pt-5">Home</p></a>
+                    <a href="#"><p class="text-[18px] pt-5 md:px-5 lg:px-0">Our Services</p></a>
+                    <a href="#"><p class="text-[18px] pt-5 md:px-5 lg:px-0">About Us</p></a>
+                    <a href="#"><p class="text-[18px] pt-5 md:px-5 lg:px-0">Contact Us</p></a>
+                </div>
+        </div>
+    </div>
+    <p class="bg-blue-500 h-10 mt-12 pt-2 text-[16px] text-white text-center">
+    All Rights Reserved by GDSC
+    </p>
+    </footer>
+    <!----------------------Footer Section Ends Here ------------------------------------------------>
+
+    <script>
+        function Menu(e) {
+            let list = document.querySelector('ul');
+            e.name === 'menu' ? (e.name = "close", list.classList.add('top-[80px]'), list.classList.add('opacity-100')) : (e.name = "menu", list.classList.remove('top-[80px]'), list.classList.remove('opacity-100'))
+        }
+    </script>
+</body>
+
+</html>
+
